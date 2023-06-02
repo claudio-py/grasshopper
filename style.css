@@ -9,20 +9,28 @@
 :root {
   font-size: 62.5%;
 }
-
+nav{
+  position: fixed;
+  background-color: #45c14e;
+  display: block;
+  min-width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+}
 body {
   font-size: 1.6rem;
   background-color: black;
-padding: 80px 80px 80px 80px;
+padding: 150px 80px 80px 80px;
   display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 h1{
   color: white;
   text-align: center;
-  padding-bottom: 50px;
+  padding-block: 50px;
 }
 main{
   background-color: gray;
@@ -35,6 +43,7 @@ justify-content: center;
 align-items: center;
 flex-wrap: wrap;
 padding: 10px 10px 10px 10px;
+
 }
 img{
   width:300px;
@@ -45,7 +54,7 @@ img{
 }
 @media (max-width:1024px){
   body{
-    padding: 10px;
+    padding: 150px 10px 10px 10px;
   }
  main{
   padding: 10px 0 10px 0;
