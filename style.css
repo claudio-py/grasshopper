@@ -21,7 +21,7 @@ nav{
 }
 body {
   font-size: 1.6rem;
-  background-color: black;
+  background-color: #fcfcfc;
 padding: 150px 80px 80px 80px;
   display: flex;
     justify-content: center;
@@ -30,10 +30,10 @@ padding: 150px 80px 80px 80px;
 h1{
   color: white;
   text-align: center;
-  padding-block: 50px;
+  padding-block: 30px;
 }
 main{
-  background-color: gray;
+  background-color: #dff8eb;
   width: fit-content;
   height: fit-content;
 gap: 50px;
@@ -42,7 +42,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
-padding: 10px 10px 10px 10px;
+padding: 80px 10px 80px 10px;
 
 }
 img{
