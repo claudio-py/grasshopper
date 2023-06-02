@@ -14,7 +14,10 @@ body {
   font-size: 1.6rem;
   background-color: black;
 padding: 80px 80px 80px 80px;
-  
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 h1{
   color: white;
@@ -39,4 +42,12 @@ img{
   border: 1px solid black;
   border-radius: 8px;
 
+}
+@media (max-width:1024px){
+  body{
+    padding: 10px;
+  }
+ main{
+  padding: 10px 0 10px 0;
+ }
 }
