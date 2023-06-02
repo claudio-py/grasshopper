@@ -9,6 +9,44 @@
 :root {
   font-size: 62.5%;
 }
+
+
+main{
+--zoom-in: 1.5; 
+--zoom-out: 1;
+--hover-background: #8A00D4;
+}
+main{
+transition: all .5;
+}
+main:hover .card-box{
+filter: blur(5px);
+transform: scale(var(--zoom-out));
+}
+.card-box{
+transform: scale(1);
+transition: all .5s;
+}
+.card-box:hover{
+transform: scale(var(--zoom-in))
+!important;
+z-index: 2;
+filter: blur(0px) !important;
+}
+main .elementor-widget-wrap {
+transition: all .5s;
+}
+main .card-box:hover .elementor-widget-wrap {
+background: var(--hover-background)
+!important;
+}
+main{
+    max-width:fit-content;
+    margin-inline:auto;
+}
+
+
+
 nav{
   position: fixed;
   background-color: #45c14e;
@@ -17,12 +55,12 @@ nav{
   top: 0;
   left: 0;
   right: 0;
-  
+  z-index: 100;
 }
 body {
   font-size: 1.6rem;
   background-color: #fcfcfc;
-padding: 150px 80px 80px 80px;
+padding: 80px 20px 80px 20px;
   display: flex;
     justify-content: center;
     align-items: center;
@@ -51,12 +89,4 @@ img{
   border: 1px solid black;
   border-radius: 8px;
 
-}
-@media (max-width:1024px){
-  body{
-    padding: 150px 10px 10px 10px;
-  }
- main{
-  padding: 10px 0 10px 0;
- }
 }
