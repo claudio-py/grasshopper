@@ -12,7 +12,7 @@
 
 
 main{
---zoom-in: 1.5; 
+--zoom-in: 1.8; 
 --zoom-out: 1;
 --hover-background: #8A00D4;
 }
@@ -20,7 +20,7 @@ main{
 transition: all .5;
 }
 main:hover .card-box{
-filter: blur(5px);
+/* filter: blur(5px); */
 transform: scale(var(--zoom-out));
 }
 .card-box{
