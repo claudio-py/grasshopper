@@ -4,71 +4,67 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
 }
 
 :root {
   font-size: 62.5%;
-}
-
-
-main{
---zoom-in: 1.8; 
+  --zoom-in: 1.8; 
 --zoom-out: 1;
---hover-background: #8A00D4;
 }
-main{
-transition: all .5;
-}
-main:hover .card-box{
-/* filter: blur(5px); */
-transform: scale(var(--zoom-out));
-}
+
 .card-box{
+  width:300px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 8px;
 transform: scale(1);
 transition: all .5s;
 }
+
+main:hover .card-box{
+transform: scale(var(--zoom-out));
+}
+
 .card-box:hover{
 transform: scale(var(--zoom-in))
 !important;
 z-index: 2;
-filter: blur(0px) !important;
 }
-main .elementor-widget-wrap {
-transition: all .5s;
-}
-main .card-box:hover .elementor-widget-wrap {
-background: var(--hover-background)
-!important;
-}
-main{
-    max-width:fit-content;
-    margin-inline:auto;
-}
-
-
 
 nav{
   position: fixed;
   background-color: #45c14e;
-  display: block;
   min-width: 100%;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 30px;
+}
+a{
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  
 }
 body {
   font-size: 1.6rem;
   background-color: #fcfcfc;
-padding: 80px 20px 80px 20px;
+padding: 80px 20px 0 20px;
   display: flex;
+  flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 h1{
   color: white;
   text-align: center;
-  padding-block: 30px;
+width: fit-content;
+height: fit-content;
 }
 main{
   background-color: #dff8eb;
@@ -83,10 +79,27 @@ flex-wrap: wrap;
 padding: 80px 10px 80px 10px;
 
 }
-img{
-  width:300px;
-  height: 300px;
-  border: 1px solid black;
-  border-radius: 8px;
+.icon{
+  width: 20px;
+}
 
+
+footer{
+  background-color: #001416;
+ min-width: 100%;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+footer div.grasshopper{
+  display: flex;
+gap: 100px;   
+
+   border:0px solid red;
+   
+}
+footer .hero{
+  width: 100px;
+padding-block: 10px;
+  height: auto;
 }
